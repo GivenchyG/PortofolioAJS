@@ -1,0 +1,55 @@
+<header class="my-4 py-2 sticky top-0 backdrop-blur-3xl bg-linear-to-r from-transparent to-red-300 border-white border-2 text-gray-800 rounded-xl">
+    <div class="flex justify-between items-center">  
+
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex flex-grow justify-center space-x-6">
+        <a class="links" href="https://tailwindcss.com/docs/cursor">
+            <i class="icon fa-solid fa-home text-xl group-hover:opacity-0 transition-opacity duration-200"></i>
+            <span class="text text-lg cursor-pointer font-bold  disabled">
+                Home
+            </span>
+        </a>
+        <a class="links" href="https://tailwindcss.com/docs/cursor">
+            <i class="icon fa-solid fa-briefcase text-xl group-hover:opacity-0 transition-opacity duration-200"></i>
+            <span class="text text-lg cursor-pointer font-bold  disabled">
+                 Mijn werk
+            </span>
+        </a>
+        <a class="links" href="https://tailwindcss.com/docs/cursor">
+            <i class="icon fa-solid fa-user text-xl group-hover:opacity-0 transition-opacity duration-200"></i>
+            <span class="text text-lg cursor-pointer font-bold  disabled">
+                Over mij
+            </span>
+        </a>
+        <a class="links" href="https://tailwindcss.com/docs/cursor">
+            <i class="icon fa-solid fa-comments text-xl group-hover:opacity-0 transition-opacity duration-200"></i>
+            <span class="text text-lg cursor-pointer font-bold  disabled">
+                Contact
+            </span>
+        </a>
+      </nav>
+  
+      <!-- Right Button -->
+      <div>
+        <button>
+            Universe.io
+        </button>
+      </div>
+
+      <!-- Hamburger for mobile view -->
+      <div class="lg:hidden">
+        <button (click)="toggleMenu()" class="text-3xl pr-2">
+          &#9776;
+        </button>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div *ngIf="isMenuOpen" class="grid grid-cols-2 lg:hidden backdrop-blur-3xl text-center py-4">
+      <a href="#" class="border-t-1 block py-2">Home</a>
+      <a href="#" class="border-t-1 block py-2">About</a>
+      <a href="#" class="border-t-1 block py-2">Services</a>
+      <a href="#" class="border-t-1 block py-2">Contact</a>
+    </div>
+  </header>
+  

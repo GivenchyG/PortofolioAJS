@@ -1,0 +1,65 @@
+.links {
+    padding: 15px;
+    border-radius: 30px;
+    backdrop-filter: blur(500px);
+    border: solid white 2px;
+    background-color: white;
+    color: gray;
+    transition: 0.5s;
+    width: 90px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .icon, .text {
+    position: absolute;
+    transition: opacity 0.3s ease;
+  }
+  
+  .text {
+    opacity: 0;
+  }
+  
+  .links:hover {
+    width: 100px;
+    transform: scale(0.8);
+    border-radius: 50px;
+    width: 300px;
+  }
+  
+  .links:hover .icon {
+    opacity: 0;
+  }
+  
+  .links:hover .text {
+    opacity: 1;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
